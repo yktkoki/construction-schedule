@@ -3,13 +3,12 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  // ここにFirebaseプロジェクトの設定を入力してください
-  apiKey: "your-api-key",
-  authDomain: "your-project-id.firebaseapp.com",
-  projectId: "your-project-id",
-  storageBucket: "your-project-id.appspot.com",
-  messagingSenderId: "your-sender-id",
-  appId: "your-app-id"
+  apiKey: "AIzaSyCBbKZIifmOlZkAqDbCV-jfpTbosSYX2N0",
+  authDomain: "construction-schedule-67b61.firebaseapp.com",
+  projectId: "construction-schedule-67b61",
+  storageBucket: "construction-schedule-67b61.firebasestorage.app",
+  messagingSenderId: "365143229041",
+  appId: "1:365143229041:web:bee7db587d6654f59dd1d0"
 };
 
 const app = initializeApp(firebaseConfig);
