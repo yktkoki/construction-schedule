@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { format, startOfMonth, endOfMonth, eachDayOfInterval, isSameDay, addMonths, subMonths, isWithinInterval } from 'date-fns';
-import { ja } from 'date-fns/locale';
 
 export default function Calendar({ tasks, onTaskEdit }) {
   const [currentMonth, setCurrentMonth] = useState(new Date());
@@ -52,7 +51,7 @@ export default function Calendar({ tasks, onTaskEdit }) {
           ←
         </button>
         <h2 className="text-lg font-semibold">
-          {format(currentMonth, 'yyyy年MM月', { locale: ja })}
+          {format(currentMonth, 'yyyy年MM月')}
         </h2>
         <button
           onClick={nextMonth}
